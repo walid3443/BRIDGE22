@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRIDGE Cross-Device Communication Protocol",
+  "protocolVersion": "1.0",
+  "transport": "WebSocket over TLS 1.3 (wss://) on local network",
+  "discoveryServiceType": "_bridge._tcp.local.",
+  "defaultPort": 47290,
+  "envelope": {
+    "required": ["version", "messageId", "senderDeviceId", "type", "timestamp", "payload"],
+    "properties": {
+      "version": { "type": "string", "const": "1.0" },
+      "messageId": { "type": "string", "minLength": 8, "maxLength": 128 },
+      "senderDeviceId": { "type": "string", "minLength": 4, "maxLength": 128 },
+      "type": {
+        "type": "string",
+        "enum": [
+          "DEVICE_HELLO",
+          "DEVICE_INFO",
+          "DEVICE_DISCOVERED",
+          "PAIRING_REQUEST",
+          "PAIRING_APPROVED",
+          "PAIRING_REJECTED",
+          "HEARTBEAT",
+          "FILE_TRANSFER_REQUEST",
+          "FILE_TRANSFER_PROGRESS",
+          "FILE_TRANSFER_COMPLETE",
+          "FILE_TRANSFER_CANCEL",
+          "REMOTE_MOUSE_MOVE",
+          "REMOTE_MOUSE_CLICK",
+          "REMOTE_KEYBOARD_INPUT",
+          "CLIPBOARD_UPDATE",
+          "SCREEN_STREAM_START",
+          "SCREEN_STREAM_STOP",
+          "CAMERA_STREAM_START",
+          "CAMERA_STREAM_STOP",
+          "AUDIO_STREAM_START",
+          "AUDIO_STREAM_STOP",
+          "NOTIFICATION_SHARE",
+          "DEVICE_DISCONNECT"
+        ]
+      },
+      "timestamp": { "type": "integer", "description": "Unix epoch milliseconds" },
+      "payload": { "type": "object" }
+    }
+  }
+}

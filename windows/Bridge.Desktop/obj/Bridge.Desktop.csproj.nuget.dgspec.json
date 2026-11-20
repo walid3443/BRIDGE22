@@ -1,0 +1,946 @@
+{
+  "format": 1,
+  "restore": {
+    "/app/applet/windows/Bridge.Desktop/Bridge.Desktop.csproj": {}
+  },
+  "projects": {
+    "/app/applet/windows/Bridge.Clipboard/Bridge.Clipboard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Clipboard/Bridge.Clipboard.csproj",
+        "projectName": "Bridge.Clipboard",
+        "projectPath": "/app/applet/windows/Bridge.Clipboard/Bridge.Clipboard.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Clipboard/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj",
+        "projectName": "Bridge.Core",
+        "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Desktop/Bridge.Desktop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Desktop/Bridge.Desktop.csproj",
+        "projectName": "Bridge.Desktop",
+        "projectPath": "/app/applet/windows/Bridge.Desktop/Bridge.Desktop.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Desktop/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Clipboard/Bridge.Clipboard.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Clipboard/Bridge.Clipboard.csproj"
+              },
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.DeviceManagement/Bridge.DeviceManagement.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.DeviceManagement/Bridge.DeviceManagement.csproj"
+              },
+              "/app/applet/windows/Bridge.Discovery/Bridge.Discovery.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Discovery/Bridge.Discovery.csproj"
+              },
+              "/app/applet/windows/Bridge.FileTransfer/Bridge.FileTransfer.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.FileTransfer/Bridge.FileTransfer.csproj"
+              },
+              "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj"
+              },
+              "/app/applet/windows/Bridge.Networking/Bridge.Networking.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Networking/Bridge.Networking.csproj"
+              },
+              "/app/applet/windows/Bridge.Pairing/Bridge.Pairing.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Pairing/Bridge.Pairing.csproj"
+              },
+              "/app/applet/windows/Bridge.RemoteControl/Bridge.RemoteControl.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.RemoteControl/Bridge.RemoteControl.csproj"
+              },
+              "/app/applet/windows/Bridge.Security/Bridge.Security.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Security/Bridge.Security.csproj"
+              },
+              "/app/applet/windows/Bridge.Streaming/Bridge.Streaming.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Streaming/Bridge.Streaming.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "dependencies": {
+            "Microsoft.Windows.SDK.BuildTools": {
+              "target": "Package",
+              "version": "[10.0.26100.1742, )"
+            },
+            "Microsoft.WindowsAppSDK": {
+              "target": "Package",
+              "version": "[1.6.241114003, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.56, 10.0.19041.56]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.DeviceManagement/Bridge.DeviceManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.DeviceManagement/Bridge.DeviceManagement.csproj",
+        "projectName": "Bridge.DeviceManagement",
+        "projectPath": "/app/applet/windows/Bridge.DeviceManagement/Bridge.DeviceManagement.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.DeviceManagement/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Discovery/Bridge.Discovery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Discovery/Bridge.Discovery.csproj",
+        "projectName": "Bridge.Discovery",
+        "projectPath": "/app/applet/windows/Bridge.Discovery/Bridge.Discovery.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Discovery/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.FileTransfer/Bridge.FileTransfer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.FileTransfer/Bridge.FileTransfer.csproj",
+        "projectName": "Bridge.FileTransfer",
+        "projectPath": "/app/applet/windows/Bridge.FileTransfer/Bridge.FileTransfer.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.FileTransfer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj",
+        "projectName": "Bridge.Logging",
+        "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Logging/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Networking/Bridge.Networking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Networking/Bridge.Networking.csproj",
+        "projectName": "Bridge.Networking",
+        "projectPath": "/app/applet/windows/Bridge.Networking/Bridge.Networking.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Networking/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj"
+              },
+              "/app/applet/windows/Bridge.Security/Bridge.Security.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Security/Bridge.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.56, 10.0.19041.56]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Pairing/Bridge.Pairing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Pairing/Bridge.Pairing.csproj",
+        "projectName": "Bridge.Pairing",
+        "projectPath": "/app/applet/windows/Bridge.Pairing/Bridge.Pairing.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Pairing/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.Security/Bridge.Security.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Security/Bridge.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.56, 10.0.19041.56]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.RemoteControl/Bridge.RemoteControl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.RemoteControl/Bridge.RemoteControl.csproj",
+        "projectName": "Bridge.RemoteControl",
+        "projectPath": "/app/applet/windows/Bridge.RemoteControl/Bridge.RemoteControl.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.RemoteControl/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.56, 10.0.19041.56]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Security/Bridge.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Security/Bridge.Security.csproj",
+        "projectName": "Bridge.Security",
+        "projectPath": "/app/applet/windows/Bridge.Security/Bridge.Security.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Security/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "dependencies": {
+            "System.Security.Cryptography.ProtectedData": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.56, 10.0.19041.56]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/app/applet/windows/Bridge.Streaming/Bridge.Streaming.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/applet/windows/Bridge.Streaming/Bridge.Streaming.csproj",
+        "projectName": "Bridge.Streaming",
+        "projectPath": "/app/applet/windows/Bridge.Streaming/Bridge.Streaming.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/applet/windows/Bridge.Streaming/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.19041": {
+            "targetAlias": "net8.0-windows10.0.19041.0",
+            "projectReferences": {
+              "/app/applet/windows/Bridge.Core/Bridge.Core.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Core/Bridge.Core.csproj"
+              },
+              "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj": {
+                "projectPath": "/app/applet/windows/Bridge.Logging/Bridge.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.56, 10.0.19041.56]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.34, 8.0.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/tmp/toolchain/dotnet/sdk/8.0.428/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

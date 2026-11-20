@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Bridge.Discovery/1.0.0": {
+        "dependencies": {
+          "Bridge.Core": "1.0.0",
+          "Bridge.Logging": "1.0.0"
+        },
+        "runtime": {
+          "Bridge.Discovery.dll": {}
+        }
+      },
+      "Bridge.Core/1.0.0": {
+        "runtime": {
+          "Bridge.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Bridge.Logging/1.0.0": {
+        "runtime": {
+          "Bridge.Logging.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bridge.Discovery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bridge.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bridge.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

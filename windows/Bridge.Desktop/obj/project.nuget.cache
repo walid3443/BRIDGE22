@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "nR9iv/YiaVo=",
+  "success": true,
+  "projectFilePath": "/app/applet/windows/Bridge.Desktop/Bridge.Desktop.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/microsoft.web.webview2/1.0.2651.64/microsoft.web.webview2.1.0.2651.64.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windows.sdk.buildtools/10.0.26100.1742/microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windowsappsdk/1.6.241114003/microsoft.windowsappsdk.1.6.241114003.nupkg.sha512",
+    "/root/.nuget/packages/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.runtime.win-x64/8.0.34/microsoft.netcore.app.runtime.win-x64.8.0.34.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windowsdesktop.app.ref/8.0.34/microsoft.windowsdesktop.app.ref.8.0.34.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windowsdesktop.app.runtime.win-x64/8.0.34/microsoft.windowsdesktop.app.runtime.win-x64.8.0.34.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/8.0.34/microsoft.aspnetcore.app.runtime.win-x64.8.0.34.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.host.win-x64/8.0.34/microsoft.netcore.app.host.win-x64.8.0.34.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windows.sdk.net.ref/10.0.19041.56/microsoft.windows.sdk.net.ref.10.0.19041.56.nupkg.sha512"
+  ],
+  "logs": []
+}

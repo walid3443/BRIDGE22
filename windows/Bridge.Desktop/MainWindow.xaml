@@ -1,0 +1,57 @@
+<Window
+    x:Class="Bridge.Desktop.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BRIDGE for Windows">
+  <Grid>
+    <NavigationView
+        x:Name="NavView"
+        PaneDisplayMode="Left"
+        IsSettingsVisible="True"
+        SelectionChanged="NavView_SelectionChanged">
+      <NavigationView.PaneHeader>
+        <StackPanel Padding="16,12" Spacing="4">
+          <TextBlock Text="BRIDGE" FontSize="20" FontWeight="SemiBold" />
+          <TextBlock x:Name="ConnectionStatusLabel" Text="Local Discovery Ready" FontSize="12" Opacity="0.7" />
+        </StackPanel>
+      </NavigationView.PaneHeader>
+      <NavigationView.MenuItems>
+        <NavigationViewItem Content="Home" Tag="home" Icon="Home" />
+        <NavigationViewItem Content="Devices" Tag="devices" Icon="CellPhone" />
+        <NavigationViewItem Content="Remote Control" Tag="remote" Icon="TouchPointer" />
+        <NavigationViewItem Content="Screen Mirroring" Tag="screen">
+          <NavigationViewItem.Icon>
+            <FontIcon Glyph="&#xE7F4;" />
+          </NavigationViewItem.Icon>
+        </NavigationViewItem>
+        <NavigationViewItem Content="File Transfer" Tag="files" Icon="Send" />
+        <NavigationViewItem Content="Clipboard" Tag="clipboard" Icon="Copy" />
+        <NavigationViewItem Content="Camera" Tag="camera" Icon="Camera" />
+        <NavigationViewItem Content="Audio" Tag="audio" Icon="Microphone" />
+        <NavigationViewItem Content="Activity" Tag="activity" Icon="List" />
+      </NavigationView.MenuItems>
+      <NavigationView.PaneFooter>
+        <StackPanel Padding="12" Spacing="8">
+          <Button Content="Emergency Disconnect" Click="EmergencyDisconnect_Click" HorizontalAlignment="Stretch" />
+          <ToggleSwitch x:Name="ThemeToggle" Header="Dark Theme" Toggled="ThemeToggle_Toggled" />
+        </StackPanel>
+      </NavigationView.PaneFooter>
+      <Grid Padding="24">
+        <StackPanel Spacing="16">
+          <TextBlock x:Name="PageTitle" Text="Home" FontSize="28" FontWeight="SemiBold" />
+          <TextBlock x:Name="PageSubtitle" Text="Local-first bridge between Windows and Android." Opacity="0.75" TextWrapping="Wrap" />
+          <Border BorderThickness="1" CornerRadius="8" Padding="16">
+            <StackPanel Spacing="8">
+              <TextBlock x:Name="PairingStatusText" Text="No paired device active. Click Discover Devices to announce on local subnet." TextWrapping="Wrap" />
+              <StackPanel Orientation="Horizontal" Spacing="12">
+                <Button Content="Discover Devices" Click="DiscoverDevices_Click" />
+                <Button Content="Generate Pairing Code" Click="GeneratePairingCode_Click" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+          <ListView x:Name="ActivityLogList" MaxHeight="320" />
+        </StackPanel>
+      </Grid>
+    </NavigationView>
+  </Grid>
+</Window>

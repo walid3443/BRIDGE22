@@ -1,0 +1,50 @@
+name: Release BRIDGE Installers
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag (e.g. v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+
+permissions:
+  contents: write
+
+jobs:
+  build-android:
+    uses: ./.github/workflows/build-android.yml
+    secrets: inherit
+
+  build-windows:
+    uses: ./.github/workflows/build-windows.yml
+
+  publish-release:
+    needs: [build-android, build-windows]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Android & Windows artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-bundle
+
+      - name: Generate combined SHA256SUMS.txt & release manifest snippet
+        run: |
+          mkdir -p final-release
+          find release-bundle -type f \( -name "*.apk" -o -name "*.msi" -o -name "*.msix" -o -name "*.exe" \) -exec cp {} final-release/ \;
+          (cd final-release && sha256sum * > SHA256SUMS.txt)
+          cat final-release/SHA256SUMS.txt
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.release_tag || github.ref_name }}
+          name: BRIDGE ${{ inputs.release_tag || github.ref_name }}
+          files: final-release/*
+          generate_release_notes: true

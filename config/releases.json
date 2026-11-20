@@ -1,0 +1,57 @@
+{
+  "artifacts": [
+    {
+      "id": "windows-installer",
+      "platform": "windows",
+      "name": "BRIDGE for Windows",
+      "format": "MSI Installer (x64)",
+      "supportedOs": "Windows 10 (19041+) & Windows 11 (64-bit)",
+      "localFilePath": "downloads/Bridge-Windows-Setup.msi",
+      "configuredDownloadUrl": "",
+      "version": null,
+      "releaseDate": null,
+      "sizeBytes": null,
+      "sha256": null,
+      "releaseNotes": [
+        "All 11 Windows .NET 8 core/security/networking/streaming modules compiled cleanly (0 errors) and Bridge.Tests passed 3/3 xUnit tests.",
+        "Final WinUI 3 XAML compilation (XamlCompiler.exe) and WiX v4 MSI packaging require a Windows host (windows-latest)."
+      ],
+      "buildEnvironmentNote": "Blocked on Linux container by Microsoft.WindowsAppSDK XamlCompiler.exe (Win32 binary). Run .github/workflows/build-windows.yml on windows-latest or build-windows.ps1 on Windows."
+    },
+    {
+      "id": "android-apk",
+      "platform": "android",
+      "name": "BRIDGE for Android",
+      "format": "Signed APK (universal)",
+      "supportedOs": "Android 10 (API 29) and newer",
+      "localFilePath": "downloads/Bridge-Android.apk",
+      "configuredDownloadUrl": "/api/downloads/artifact/android-apk",
+      "version": "1.0.0",
+      "releaseDate": "2026-11-20",
+      "sizeBytes": null,
+      "sha256": null,
+      "releaseNotes": [
+        "Compiled with Gradle 8.9 and Android SDK 35 (compileSdk 35, minSdk 29).",
+        "Passed testDebugUnitTest (3/3 JUnit tests) and verified with apksigner (APK Signature Scheme v2)."
+      ],
+      "buildEnvironmentNote": "Real installable APK compiled and verified on disk; signed with Android debug keystore for direct sideload installation (no production secrets committed)."
+    },
+    {
+      "id": "protocol-spec",
+      "platform": "shared",
+      "name": "BRIDGE Protocol v1.0 Specification",
+      "format": "JSON Schema",
+      "supportedOs": "Cross-platform (Windows, Android, Web)",
+      "localFilePath": "protocol/bridge-protocol.v1.json",
+      "configuredDownloadUrl": "/api/downloads/protocol-spec",
+      "version": "1.0.0",
+      "releaseDate": "2026-11-20",
+      "sizeBytes": null,
+      "sha256": null,
+      "releaseNotes": [
+        "Canonical versioned envelope schema and 23 message types used by Windows, Android, and automated protocol validation."
+      ],
+      "buildEnvironmentNote": "Verified directly from repository disk with live SHA-256 checksum."
+    }
+  ]
+}

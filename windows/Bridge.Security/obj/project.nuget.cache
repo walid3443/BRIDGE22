@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uNgpAXDgHxw=",
+  "success": true,
+  "projectFilePath": "/app/applet/windows/Bridge.Security/Bridge.Security.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windowsdesktop.app.ref/8.0.34/microsoft.windowsdesktop.app.ref.8.0.34.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.windows.sdk.net.ref/10.0.19041.56/microsoft.windows.sdk.net.ref.10.0.19041.56.nupkg.sha512"
+  ],
+  "logs": []
+}

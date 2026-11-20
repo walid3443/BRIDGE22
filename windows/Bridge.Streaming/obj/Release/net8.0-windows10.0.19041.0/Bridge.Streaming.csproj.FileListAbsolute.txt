@@ -1,0 +1,17 @@
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.deps.json
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.dll
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.pdb
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Core.dll
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Logging.dll
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Core.pdb
+/app/applet/windows/Bridge.Streaming/bin/Release/net8.0-windows10.0.19041.0/Bridge.Logging.pdb
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.csproj.AssemblyReference.cache
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.GeneratedMSBuildEditorConfig.editorconfig
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.AssemblyInfoInputs.cache
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.AssemblyInfo.cs
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.csproj.CoreCompileInputs.cache
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.S.A30AEB72.Up2Date
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.dll
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/refint/Bridge.Streaming.dll
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/Bridge.Streaming.pdb
+/app/applet/windows/Bridge.Streaming/obj/Release/net8.0-windows10.0.19041.0/ref/Bridge.Streaming.dll

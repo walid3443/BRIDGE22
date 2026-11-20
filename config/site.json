@@ -1,0 +1,8 @@
+{
+  "productName": "BRIDGE",
+  "repositoryUrl": "https://github.com/example/bridge-platform",
+  "contactEmail": "",
+  "securityContactEmail": "",
+  "organizationName": "",
+  "configurationNote": "Contact and distribution fields are intentionally configurable in config/site.json and config/releases.json so no placeholder identity or address is invented."
+}

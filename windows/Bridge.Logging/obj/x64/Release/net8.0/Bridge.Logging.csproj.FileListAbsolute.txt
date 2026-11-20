@@ -1,0 +1,11 @@
+/app/applet/windows/Bridge.Logging/bin/x64/Release/net8.0/Bridge.Logging.deps.json
+/app/applet/windows/Bridge.Logging/bin/x64/Release/net8.0/Bridge.Logging.dll
+/app/applet/windows/Bridge.Logging/bin/x64/Release/net8.0/Bridge.Logging.pdb
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/Bridge.Logging.GeneratedMSBuildEditorConfig.editorconfig
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/Bridge.Logging.AssemblyInfoInputs.cache
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/Bridge.Logging.AssemblyInfo.cs
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/Bridge.Logging.csproj.CoreCompileInputs.cache
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/Bridge.Logging.dll
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/refint/Bridge.Logging.dll
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/Bridge.Logging.pdb
+/app/applet/windows/Bridge.Logging/obj/x64/Release/net8.0/ref/Bridge.Logging.dll

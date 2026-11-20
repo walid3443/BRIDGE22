@@ -1,0 +1,59 @@
+name: Build & Test BRIDGE for Windows
+
+on:
+  push:
+    paths:
+      - 'windows/**'
+      - '.github/workflows/build-windows.yml'
+  pull_request:
+    paths:
+      - 'windows/**'
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: windows
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET 8 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install WiX Toolset v4 CLI
+        run: dotnet tool install --global wix --version 4.*
+
+      - name: Run Windows unit tests
+        run: dotnet test Bridge.Tests\Bridge.Tests.csproj -c Release --verbosity normal
+
+      - name: Publish BRIDGE Desktop (win-x64) and build MSI installer
+        working-directory: windows/installer
+        run: ./build-windows.ps1 -Configuration Release -Runtime win-x64 -BuildMsi $true
+
+      - name: Verify installer output & compute SHA-256
+        run: |
+          $artifactsDir = Join-Path $PWD "dist-artifacts"
+          New-Item -ItemType Directory -Force -Path $artifactsDir | Out-Null
+          $msi = Get-ChildItem -Path "installer\out" -Filter "*.msi" -ErrorAction SilentlyContinue | Select-Object -First 1
+          if (-not $msi) {
+            throw "Expected MSI installer was not generated."
+          }
+          Copy-Item $msi.FullName (Join-Path $artifactsDir "Bridge-Windows-Setup.msi")
+          $hash = Get-FileHash (Join-Path $artifactsDir "Bridge-Windows-Setup.msi") -Algorithm SHA256
+          $size = (Get-Item (Join-Path $artifactsDir "Bridge-Windows-Setup.msi")).Length
+          "$($hash.Hash.ToLowerInvariant())  Bridge-Windows-Setup.msi ($size bytes)" | Out-File (Join-Path $artifactsDir "SHA256SUMS-windows.txt") -Encoding utf8
+          Get-Content (Join-Path $artifactsDir "SHA256SUMS-windows.txt")
+
+      - name: Upload Windows installer artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bridge-windows-installer
+          path: windows/dist-artifacts/*
+          if-no-files-found: error

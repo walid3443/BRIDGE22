@@ -1,0 +1,6 @@
+{
+  "name": "BRIDGE — Cross-Device Platform",
+  "description": "Local-first cross-device connectivity, remote control, file transfer, clipboard sync, and screen mirroring between Android smartphones and Windows PCs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
